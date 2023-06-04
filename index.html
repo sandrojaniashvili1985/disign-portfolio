@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>design portfolio</title>
+</head>
+<body>
+  <header>
+    <img src="assets\logo.svg" alt="logo">
+    <!-- <button class="btn black"><h5>Free Consultation</h5></button> -->
+    <a class="btn" href="https://github.com/sandrojaniashvili1985"><h5>Free Consultation</h5></a>
+  </header>
+  <div class="main-head">
+    <div>
+      <h1>Design solutions made easy</h1>
+      <p>With over ten years of experience in various design disciplines, I’m your one-stop shop for your design needs.</p>
+    </div>
+  </div>
+  <main>
+    <section class="one-grid">
+      <div class="blue">
+        <img src="assets\pattern-graphic-design.svg" alt="">
+        <h3>Graphic Design</h3>
+      </div>
+      <div class="yellow">
+        <img src="assets\pattern-ui-ux.svg" alt="">
+        <h3>UI/UX</h3>
+      </div>
+      <div class="pink">
+        <img src="assets\pattern-apps.svg" alt="">
+        <h3>Apps</h3>
+      </div>
+      <div class="red-gray red">
+        <img src="assets\pattern-illustrations.svg" alt="">
+        <h3>Illustrations</h3>
+      </div>
+      <div class="cyan">
+        <img src="assets\pattern-photography.svg" alt="">
+        <h3>Photography</h3>
+      </div>
+      <div class="purple">
+        <img src="assets\pattern-motion-graphics.svg" alt="">
+        <h3>Motion Graphics</h3>
+      </div>
+    </section>
+    <section class="two">
+      <img src="assets\sandro.jpg" alt="">
+      <div class="two-text">
+        <h2>I’m sandro, and I’d love to work on your next project</h2>
+        <p>I love working with others to create beautiful design solutions. I’ve designed everything from brand illustrations to complete mobile apps. I’m also handy with a camera!</p>
+        <a class="btn red" href="https://www.linkedin.com/in/sandro-janiashvili/"><h5>Free Consultation</h5></a>
+      </div>
+    </section>
+    <section class="three">
+      <h4>My Work</h4>
+      <div class="three-slide-content">
+        <img src="assets\image-slide-1.jpg" alt="">
+        <img src="assets\image-slide-2.jpg" alt="">
+        <img src="assets\image-slide-3.jpg" alt="">
+        <img src="assets\image-slide-4.jpg" alt="">
+        <img src="assets\image-slide-5.jpg" alt="">
+      </div>
+      <div class="three-arrow">
+         <button class="icon" onclick="scrolll()">
+          <svg width="15" height="16" xmlns="http://www.w3.org/2000/svg"><path fill="#FFF" d="M8 0 0 8l8 8 1.687-1.687-5.121-5.12h10.241V6.807H4.566l5.121-5.12z"/></svg>
+         </button>
+          <button class="icon" onclick="scrollr()">
+            <svg width="15" height="16" xmlns="http://www.w3.org/2000/svg"><path fill="#FFF" d="m6.808 16 8-8-8-8-1.687 1.687 5.121 5.12H.001v2.386h10.241l-5.121 5.12z"/></svg>
+          </button>
+      </div>
+    </section>
+    <section class="four">
+      <div class="four-container">
+        <div>
+          <h2>Book a call with me</h2>
+          <p>I’d love to have a chat to see how I can help you. The best first step is for us to discuss your project during a free consultation. Then we can move forward from there.</p>
+        </div>
+        <a class="btn red" href="https://www.linkedin.com/in/sandro-janiashvili/"><h5>Free Consultation</h5></a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <img src="assets\logo.svg" alt="logo">
+    <a class="btn" href="https://github.com/sandrojaniashvili1985"><h5>Free Consultation</h5></a>
+  </footer>
+</body>
+<script>
+  function scrolll() {
+    var left = document.querySelector(".three-slide-content");
+    left.scrollBy(-300, 0);
+  }
+
+  function scrollr() {
+    var right = document.querySelector(".three-slide-content");
+    right.scrollBy(300, 0);
+  }
+</script>
+</html>
