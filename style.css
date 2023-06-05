@@ -506,12 +506,23 @@ main {
 
 .three-slide-content img {
   position: relative;
-  width: 80%;
-  height: 100%;
+  width: min(445px, 300px);
+  height: min(445px, 300px);
+  border: 5px solid black;
+
 }
 
 .three-slide-content::-webkit-scrollbar{
   -webkit-appearance: none;
+}
+
+.three-slide-content img:hover,
+.three-slide-content img:active {
+  cursor: pointer;
+  width: 50%;
+  height: 50%;
+  transition-duration: 2s;
+  transition-timing-function: ease-in-out;
 }
 /* .......................... */
 
